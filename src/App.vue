@@ -1,10 +1,19 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-  <RouterLink to="/">Home</RouterLink>
-  <RouterLink to="/WeekTwo">Week 2</RouterLink>
+  <div class="container">
+    <header>
+      <div class="wrapper">
+        <nav>
+          <RouterLink to="/">Home</RouterLink>
+          <RouterLink to="/WeekTwo">Week 2</RouterLink>
+          <RouterLink to="/WeekThree">Week 3</RouterLink>
+        </nav>
+      </div>
+    </header>
+  </div>
 
   <RouterView />
 </template>
